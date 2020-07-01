@@ -3,7 +3,7 @@
     vertical-align: middle;
 }
 
-header {
+header, td {
     font-size: 85px;
 }
 
@@ -11,14 +11,13 @@ td {
     width: 140px;
     height: 140px;
     background-color: skyblue;
-    font-size: 85px;
 }
 
 table {
     margin: 0 auto;
 }
 
-#reset_button {
+button {
     width: 130px;
     height: 40px;
     margin-top: 20px;
