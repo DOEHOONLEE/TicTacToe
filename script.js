@@ -4,6 +4,7 @@ const winCombination = [
     "012","345","678","036","147","258","048","246"
 ]
 let turn = true;
+let winner = "draw";
 
 for (let i=0; i < tdNum.length; i++) {
     tdNum[i].addEventListener("click", function(e) {
@@ -27,7 +28,7 @@ function placeUserMove(e, turn) {
     }
     else {
         e.target.innerHTML = turn;
-        winCheck(winCombination)
+        winCheck(winCombination);
     }
 }
 
@@ -39,11 +40,20 @@ function winCheck(winCombination) {
         let coord3 = document.getElementById(+(winCombination[i][2]));
         if (coord1.innerText.length && coord2.innerText.length && coord3.innerText.length) {
             if (coord1.innerText == coord2.innerText && coord2.innerText == coord3.innerText) {
+                winner = coord1.innerText;
                 alert("The winner is " + coord1.innerText);
                 reset();
             }
         }
     }
+    
+    const filled = [...tdNum].filter(c => c.innerHTML.length < 1);
+    if (filled.length === 0 && winner === "draw") {
+        alert("DRAW!");
+        reset();
+        console.log(filled)
+    }
+    console.log(filled)
 }
 
 function reset() {

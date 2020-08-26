@@ -18,12 +18,14 @@ Connect three tiles with your stone and you are the winner~!
 
 ## Updates / progress
 
- + Game play
-    - add sound
-    - add animation effect
+ + Bugs
 
- + Service
-    - Re-color and re-organize using CSS
-    - make signup/login possible
-    - keep scores
-    - show top 50 players' scores
+ + Improvements
+    - [ ] add sound
+    - [ ] add animation effect
+    - [ ] Re-color and re-organize using CSS
+
+ + Upcoming Features
+    - [ ] make signup/login possible
+    - [ ] keep scores
+    - [ ] show top 50 players' scores
