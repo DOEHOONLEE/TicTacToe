@@ -21,7 +21,7 @@ Connect three tiles with your stone and you are the winner~!
  + Bugs
 
  + Improvements
-    - [ ] add sound
+    - [X] add sound
     - [ ] add animation effect
     - [ ] Re-color and re-organize using CSS
 

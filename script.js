@@ -8,6 +8,9 @@ let winner = "draw";
 
 for (let i=0; i < tdNum.length; i++) {
     tdNum[i].addEventListener("click", function(e) {
+        
+        playSound();
+        
         if (turn) {
             // e.target.innerHTML = "O"
             placeUserMove(e, "O");
@@ -58,4 +61,9 @@ function winCheck(winCombination) {
 
 function reset() {
         tdNum.forEach(c => c.innerHTML = "");
+}
+
+function playSound() {
+    const playSound = document.getElementById("click");
+    playSound.play();
 }
