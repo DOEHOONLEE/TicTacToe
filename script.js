@@ -25,12 +25,13 @@ for (let i=0; i < tdNum.length; i++) {
 }
 
 
-function placeUserMove(e, turn) {
+function placeUserMove(e, player) {
     if (e.target.innerHTML) {
-        alert("You cannot play there. Please pick another spot")
+        alert("You cannot play there. Please pick another spot");
     }
     else {
-        e.target.innerHTML = turn;
+        e.target.innerHTML = player;
+	turn = !turn;
         winCheck(winCombination);
     }
 }
