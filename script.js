@@ -14,12 +14,10 @@ for (let i=0; i < tdNum.length; i++) {
         if (turn) {
             // e.target.innerHTML = "O"
             placeUserMove(e, "O");
-            turn = false;
         }
         else {
             // this.innerHTML = "X"
             placeUserMove(e, "X");
-            turn = true;
         }
     })
 }
